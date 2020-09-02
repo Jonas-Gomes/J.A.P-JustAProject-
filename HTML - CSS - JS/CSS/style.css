@@ -1,0 +1,126 @@
+body{
+    font-family: 'Wask new webfont', sans-serif;
+    background-color: #2A77FF;
+}
+a{
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+}
+p{
+    font-family: Inconsolata, monospace;
+}
+.left-container{
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.logo{
+    position: absolute;
+    top: 40%;
+    transform: rotate(270deg);
+    font-size: 100px;
+    -webkit-text-stroke: 3px black;
+    z-index: 2;
+    cursor: default;
+}
+.logo-shadow{
+    position: absolute;
+    top: 39%;
+    left: 2%;
+    transform: rotate(270deg);
+    font-size: 100px;
+    z-index: 1;
+    color: rgba(255, 255, 255, .1);
+    background-image: url(../IMG/small-dot.png);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px black;
+    cursor: default;
+}
+.card{
+    width: 22.5%;
+    height: 90%;
+    background:transparent;
+    z-index: 2;
+    transition: 0.2s ease-in-out;
+    transform: scale(.9);
+    cursor: default;
+}
+.card:hover{
+    background: #fff;
+    transition: 0.2s;
+    transform: scale(1);
+}
+.card:hover .img-cadastro{
+    display: block;
+}
+.card:hover .texto-cad{
+    display: block;
+}
+.card:hover .button-cad{
+    display: block;
+}
+.card:hover .button-cad-shadow{
+    display: block;
+}
+#card-cadastro{
+    position: absolute;
+    left: 12%;
+    top: 5%;
+}
+.img-cadastro{
+    position: absolute;
+    top: 12%;
+    left: 33%;
+    display: none;
+    transition: 1s;
+}
+.titulo-cad{
+    position: absolute;
+    top: 45%;
+    left: 22%;
+    color: #000;
+    font-size: 40px;
+}
+.texto-cad{
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    text-justify: auto;
+    display: none;
+}
+.button-cad{
+    position: absolute;
+    top: 85%;
+    left: 15%;
+    font-family: 'Anton', sans-serif;
+    border: solid #000 2px;
+    background: #fff;
+    width: 70%;
+    height: 10%;
+    font-size: 20px;
+    letter-spacing: 2px;
+    z-index: 2;
+    transition: 0.2s;
+    cursor: pointer;
+    display: none;
+}
+.button-cad:hover{
+    top: 84%;
+    left: 14%;
+    transition: 0.2s;
+}
+.button-cad-shadow{
+    position: absolute;
+    top: 86%;
+    left: 17%;
+    border: solid #000 2px;
+    background: #fff;
+    width: 70%;
+    height: 10%;
+    background-image: url(../IMG/small-dot.png);
+    z-index: 1;
+    transition: 0.2s;
+    display: none;
+}
